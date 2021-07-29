@@ -8,7 +8,7 @@ class Customer(models.Model):
     email = models.CharField(max_length=200)
     
     
-    def _str_(self):
+    def __str__(self):
         return self.name
 
 
@@ -18,7 +18,7 @@ class Product(models.Model):
     digital = models.BooleanField(default=False, null=True, blank=True)
     #image
 
-    def _str_(self):
+    def __str__(self):
         return self.name
 
 
